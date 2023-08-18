@@ -86,12 +86,14 @@ nav {
 
 .intro {
   color: white;
-  letter-spacing: 2px;
+  width: 25%;
 }
 
 .hello {
   color: white;
   font-size: 80px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 .subHello {
@@ -186,7 +188,6 @@ nav {
 #spacer {
   width: 25px;
 }
-
 
 #experienceContent {
   display: none;
@@ -443,7 +444,7 @@ nav {
   text-decoration: none;
 }
 
-.viewResumeButton a{
+.viewResumeButton a {
   color: white;
   font-weight: 200;
   font-size: small;
@@ -522,4 +523,9 @@ nav {
   background-color: rgb(234, 61, 79);
   color: white;
   transform: scale(1.1);
+}
+
+/* Style for the Typed.js cursor */
+.typed-cursor {
+  display: none;
 }

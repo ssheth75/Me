@@ -79,15 +79,13 @@ body.menu-toggled > .meta-link > span {
 }
 
 #segment-indicator {
-  
   align-items: center;
   justify-content: center;
   display: flex;
   gap: 10px;
-  margin-left:57px;
+  margin-left: 57px;
   margin-right: 57px;
-margin-top: 760px;
-
+  margin-top: 760px;
 }
 
 #segment-indicator div {
@@ -104,8 +102,8 @@ margin-top: 760px;
   margin-left: 20px;
   background-color: rgb(45, 45, 45);
   padding: 8px;
-border-radius: 5px;
-transition: 0.3s;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .home:hover {

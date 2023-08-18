@@ -9,16 +9,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="preload" href="photos/sfo2.jpg" as="image">
-<link rel="preload" href="photos/nyc.jpg" as="image">
-<link rel="preload" href="photos/alps.jpg" as="image">
-<link rel="preload" href="photos/darkMonkey.jpg" as="image">
-<link rel="preload" href="photos/road.jpg" as="image">
-<link rel="preload" href="photos/parrot.jpg" as="image">
-<link rel="preload" href="photos/winston.JPG" as="image">
-<link rel="preload" href="photos/greece.jpg" as="image">
-<link rel="preload" href="photos/lawquad.jpg" as="image">
-<link rel="preload" href="photos/wonderland.jpg" as="image">
+  <link rel="preload" href="photos/sfo2.jpg" as="image">
+  <link rel="preload" href="photos/nyc.jpg" as="image">
+  <link rel="preload" href="photos/alps.jpg" as="image">
+  <link rel="preload" href="photos/darkMonkey.jpg" as="image">
+  <link rel="preload" href="photos/road.jpg" as="image">
+  <link rel="preload" href="photos/parrot.jpg" as="image">
+  <link rel="preload" href="photos/winston.JPG" as="image">
+  <link rel="preload" href="photos/greece.jpg" as="image">
+  <link rel="preload" href="photos/lawquad.jpg" as="image">
+  <link rel="preload" href="photos/wonderland.jpg" as="image">
 
 
 </head>
@@ -44,8 +44,18 @@
 
       <div class="landing">
         <div class="intro">
-          <div class="hello">Hi! I'm <span class="colored-word"> Shirvil</span></div>
+          <div class="hello"></div>
           <div class="subHello">Student | Developer | Designer</div>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+          <script>
+
+            var typed = new Typed(".hello", {
+              strings: ["Hi!", "I'm <span class='colored-word'>Shirvil</span>"],
+              typeSpeed: 100,
+            });
+
+          </script>
         </div>
 
         <div class="headshot">
@@ -197,7 +207,9 @@
 
 
   </div>
+
   <script src="styling.js"></script>
+
 </body>
 
 <!-- END BODY -->
