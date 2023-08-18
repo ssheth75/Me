@@ -5,7 +5,7 @@ html {
 
 body {
   /* background-color: rgb(21, 21, 21); */
-  background-image: url(background2.svg);
+  background-image: url(background.svg);
   background-size: cover;
   background-attachment: fixed;
 }
