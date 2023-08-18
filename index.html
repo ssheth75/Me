@@ -6,16 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-  <!-- link for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- links for Roboto Mono font. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  
+
 </head>
 
 
@@ -23,76 +17,176 @@
 
 <body>
 
-  <div class="scrollContainer">
-    <section id="homeSection">
-      <div class="topnav">
-        <a class="active" href="Shirvil Sheth Resume Oct 2022.pdf">Resume</a>
-        <a href="#https://github.com/ssheth75"> <i class="icon fa fa-brands fa-github-square fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/shirvil-sheth-74584222a/"><i
-            class="icon fa fa-brands fa-linkedin fa-2x"></i></a>
-        <a href="mailto:shirvil@umich.edu"><i class="icon fa fa-solid fa-envelope fa-2x"></i></a>
-      </div>
-      <div class="container-fluid">
-        <div id="headerBackground">
+  <div id="content">
+    <div class="landingContainer">
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li onclick="scrollToSection(710);">About Me</li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="photos.html">Photography</a></li>
+            <li onclick="scrollToSection(10000);">Contact</li>
+            <li><a href="resume.pdf">Resume</a></li>
+          </ul>
+        </nav>
+      </header>
 
-          <!-- Title animation  -->
-          <div class="titleContainer">
-            <h1><span class="auto-type"></span></h1>
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <div class="landing">
+        <div class="intro">
+          <div class="hello">Hi! I'm <span class="colored-word"> Shirvil</span></div>
+          <div class="subHello">Student | Developer | Designer</div>
+        </div>
 
-            <script>
-
-              var typed = new Typed(".auto-type", {
-                strings: ["Hi! I'm Shirvil"],
-                typeSpeed: 150,
-              })
-
-            </script>
-          </div>
+        <div class="headshot">
+          <img src="headshot.svg">
         </div>
       </div>
 
 
-      <div id="leftSideText">
-        <h3>University of Michigan <br> Computer Science <br> Class of 2025 <br> ---</h3>
+    </div>
+
+    <div id="aboutMeContainer">
+      <div class="aboutMe">
+
+        <div class="aboutMePic">
+          <img src="aboutMe.svg">
+
+        </div>
+
+        <div class="aboutMeText">
+          <div class="aboutMeTitle">About Me</div>
+          <div class="aboutMeDescription">My name is Shirvil Sheth, a junior at the University of Michigan majoring in
+            Computer Science and minoring at the Ross School of Business.
+            My world revolves around the fascinating blend of technology, business, and social impact. With an
+            unwavering
+            belief in the power of tech to
+            drive positive change, I'm on a mission to create solutions that make a difference. When I'm not around the
+            computer, you'll likely find me
+            on the basketball court or exploring the world through the lens of my camera. This website is my canvas, a
+            place where I paint the strokes of my interests, experiences,
+            and aspirations. From personal projects to snapshots of life
+            through the lens, I'll be sharing it all. I'm excited to connect with fellow learners, tech enthusiasts,
+            and anyone who believes in the power of combining passions. Don't hesitate to reach out—I'd love to hear
+            your
+            thoughts, share stories, and collaborate on ideas.</div>
+          <div id="Hspacer"></div>
+
+          <div class="tab-container">
+            <div class="tabs">
+              <div class="tab" id="skillsTab" onclick="showContent('skillsContent'); updateBorder('skillsTab')">Skills
+              </div>
+              <div id="spacer"></div>
+              <div class="tab" id="experienceTab"
+                onclick="showContent('experienceContent'); updateBorder('experienceTab')">
+                Experience</div>
+              <div id="spacer"></div>
+              <div class="tab" id="educationTab"
+                onclick="showContent('educationContent'); updateBorder('educationTab')">
+                Education</div>
+            </div>
+            <!-- Content for each tab will be displayed here -->
+          </div>
+          <div class="tab-content">
+
+            <div id="skillsContent">
+              <div id="skill"><span class="colored-word">Languages</span> </div>
+              C++ | C | Python | JavaScript |
+              TypeScript | React | HTML | CSS | SQL
+              <div id="Hspacer"></div>
+              <div id="skill"><span class="colored-word">Other Skills</span> </div>
+              Adobe Photoshop | Adobe Illustrator |
+              Adobe Lightroom | Figma | Microsoft Office | Power BI
+            </div>
+
+            <div id="experienceContent">
+              <div id="experience"><span class="colored-word">Internships</span> </div>
+              Software Engineering Intern @ Rocket Mortgage | Summer 2023
+              <br>
+              Software Engineering Intern @ Norma Group | Summer 2022
+            </div>
+
+
+            <div id="educationContent">
+              <div id="education"><span class="colored-word">University of Michigan</span> </div>
+              Major | Computer Science
+              <br>
+              Minor | Ross School of Business
+              <div id="Hspacer"></div>
+              <div id="education"><span class="colored-word">Highschool</span> </div>
+              Rochester High School | MI
+            </div>
+          </div>
+        </div>
       </div>
-      <ul id="mainButtons">
+    </div>
 
+    <div class="additionalContainer">
+      <div class="additionalCard" onclick="window.location.href='projects.html'">
+        <img src="brackets.svg">
+        <div class="projectTitle">
+          Projects
+        </div>
+        <div class="projectText">
+          Take a look at some of the things I've built in the past and what I'm currently working on!
+          From some basic games to more challenging web apps,
+          I try to build things that are both engaging and useful.
+        </div>
+      </div>
 
-        <li><a href="#aboutMeSection"> <img id="aboutMeCard" src="MoragaPic.png"> </a></li>
+      <div class="additionalCard" onclick="window.location.href='photos.html'">
+        <img src="camera.svg">
+        <div class="projectTitle">
+          Photography
+        </div>
+        <div class="projectText">
+          Welcome to my world of captured moments, where film is my main canvas.
+          Take a moment to explore life's beauty through my lens.
+          Each photo tells a unique story, an invitation to witness the world as I see it.
+        </div>
+      </div>
+    </div>
 
-        <li><a href="#photosSection"> <img id="photosCard" src="photosCardPic.png"></a></li>
+    <div class="contactMeContainer">
+      <div class="contacts">
+        <div class="contactMeTitle">
+          Contact Me
+        </div>
+        <div class="emailNumber" onclick="openEmailClient()">
+          <i id="emailIcon" class="fa fa-regular fa-paper-plane"></i> shirvil@umich.edu
+        </div>
 
-        <li><a href="#projectsSection"> <img id="projectsCard" src="ProjectButtonPic.png"></a></li>
+        <div class="emailNumber">
+          <i id="emailIcon" class="fa fa-solid fa-phone"></i> +1 2488537196
+        </div>
 
+        <div class="socials">
+          <button onclick="window.location.href='https:www.linkedin.com/in/shirvilsheth'"><i
+              class="fa fa-brands fa-linkedin"></i></button>
+          <button onclick="window.location.href='https://github.com/ssheth75/'"><i
+              class="fa fa-brands fa-github"></i></button>
+          <button onclick="window.location.href='https://www.instagram.com/shirvil_sheth/'"><i
+              class="fa fa-brands fa-instagram"></i></button>
 
-      </ul>
-    </section>
+        </div>
+        <button class="viewResumeButton"> <a href="resume.pdf">Resume</a></button>
 
-    <section id="aboutMeSection">
-      <h1 id="aboutMeTitle">About Me</h1>
-      <img id="myPicture" src="aboutMePic.png">
-      <h5 id="myBio">asjdhwhduwehduhqehjhfwehfwehfuwfh <br>  asjdhwhduwehduhqehjhfwehfwehfuwfh <br>  
-                     asjdhwhduwehduhqehjhfwehfwehfuwfh<br>  asjdhwhduwehduhqehjhfwehfwehfuwfh<br>  
-                     asjdhwhduwehduhqehjhfwehfwehfuwfh<br>  asjdhwhduwehduhqehjhfwehfwehfuwfh<br>  
-                     asjdhwhduwehduhqehjhfwehfwehfuwfh<br>  asjdhwhduwehduhqehjhfwehfwehfuwfh</h5>
-    </section>
+      </div>
 
-    <section id="projectsSection">
-      <h1>My Projects</h1>
-    </section>
+      <form id="emailCapture" action="https://formspree.io/f/xoqoeggp" method="POST">
 
-    <div class="photosGrid">
-      <h1 id="myPhotosTitle">My Photography</h1>
+        <input id="yourName" name="name" type="text" placeholder="Name" required>
+        <input id="yourEmail" name="email" type="email" placeholder="Email" required>
+
+        <textarea id="yourMessage" name="message" placeholder="Your Message" required></textarea>
+        <input id="sendButton" type="submit" value="Send">
+
+      </form>
 
     </div>
 
 
   </div>
-
   <script src="styling.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 </body>
 
 <!-- END BODY -->

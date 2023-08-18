@@ -1,210 +1,525 @@
-
 html {
-    height: 100%;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
+  /* background-color: rgb(21, 21, 21); */
+  background-image: url(background2.svg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* Navigation bar style */
-nav{
-    padding-left: 2%;
-    padding-right: 2%;
-    color: rgb(255, 248, 125);
-
+#content {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(255, 248, 125);
-  overflow: hidden;
-  
-
-
+#content.fade-in {
+  opacity: 1;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+#projectContent {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#projectContent.fade-in {
+  opacity: 1;
+}
+
+.landingContainer {
+  /* background-image: url(background2.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  min-height: 750px;
+}
+
+header {
+  color: #fff;
+  padding: 10px 0;
+  font-weight: 200;
+}
+
+nav {
+  text-align: right;
+  padding-right: 20px; /* Add padding to the right side */
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-list li:hover {
+  color: rgb(234, 61, 79);
+}
+
+.nav-list li:first-child {
+  margin-left: 0;
+}
+
+.nav-list li a {
+  color: #fff;
   text-decoration: none;
-  font-size: 17px;
+  transition: 0.3s;
 }
 
-
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: rgb(255, 248, 125);
-  color: black;
-  font-size: 20px;
-
-}
-/* For the social icons */
-.icon{
-    color: rgb(0, 0, 0);
+.nav-list li a:hover {
+  color: rgb(234, 61, 79);
 }
 
-/* Main page background */
-#headerBackground {
-    background-color: rgb(255, 248, 125);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 13vh;
-    background-size: cover;
-
+.landing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
 }
 
-.titleContainer{
-    padding-left: 25px;
-    padding-top: 15px;
-    display: flex;
-    position: absolute;
-    color: black;
-    width: 100%;
+.intro {
+  color: white;
+  letter-spacing: 2px;
 }
 
-.titleContainer h1{
-    font-size: 80px;
-    font-weight: 600;
+.hello {
+  color: white;
+  font-size: 80px;
 }
 
-.container{
-    padding: 0;
+.subHello {
+  padding-left: 2px;
+
+  font-weight: 200;
 }
 
-.scrollContainer{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    position: relative;
-
+.colored-word {
+  color: rgb(234, 61, 79); /* Or any color you prefer */
 }
-
-#homeSection{
-    background-color: rgb(28, 28, 28);
-    height: 100vh;
-    text-align: center;
-
-    scroll-snap-align: start;
-}
-
-#leftSideText{
-    color: white;
-    background-color: rgb(28, 28, 28);
-    height: 9vh;
-    padding-top: 2vh;
-    padding-left: 20px;
-    position: absolute;
-    text-align: left;
-}
-
-/* For hompage image buttons and animation. */
-#mainButtons{
-    list-style: none;
-    padding-right: 5vh;
-    height: 80vh;
-    padding-top: 12vh;
-}
-
-#mainButtons li{
-    display:inline-block;
-}
-
-#mainButtons li a{
-    padding: 30px;
-    display: inline-block;      
-    text-decoration: none;
-}
-
-#mainButtons li a img{
-    width: 30vh;
-    height: 35vh;
-    display: block;
-    transition: transform 0.5s ease;
-}
-
-#mainButtons li a:hover img {
-    transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Section of webpage for about me. */
-#aboutMeSection {
-    background-color: rgb(28, 28, 28);
-    height: 100vh;
-    width: 100%;
-    text-align: left; 
-    scroll-snap-align: start;
-
-
-}
-
-#aboutMeTitle{
-text-align: center;
-color: white;
-padding-top: 5vh;
-}
-
-#myPicture{
-    width: 54vh;
-    height: 59vh;
-    padding-left: 10vh;
-    float: left;
-    padding-top: 10vh;
-}
-
-#myBio{
-    color: white;
-    text-align: right;
-    padding-top: 10vh;
-    padding-right: 20vh;
-}
-
-/* Section of webpage for my projects. */
-#projectsSection{
-    background-color: white;
-    height: 100vh;
-    text-align: center;
-    scroll-snap-align: start;
-
-}
-
-/* Section of webpage for my photos. */
-.photosGrid{
-    background-color: rgb(28, 28, 28);
-    color: white;
-    height: 150vh;
-    text-align: center;
-    scroll-snap-align: start;
-    padding-top: 5vh;
-}
-
-.grid_item{
-    width: 70vh;
-}
-
-.grid_item img{
-    width: 30%;
-}
-
-
-.container-fluid {
-    padding: 0;
-}
-
-
 
 /* Typing animation for title */
 
+#aboutMeContainer {
+  min-height: 850px;
+  /* background-image: url(background2.svg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.aboutMePic {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.aboutMeText {
+  color: white;
+  margin-right: 40px;
+  min-height: 500px;
+  max-height: 50vh;
+  margin-top: 100px;
+  margin-left: 15px;
+  width: 50%;
+  font-weight: 300;
+  position: relative;
+}
+.aboutMeTitle {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.aboutMeDescription {
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tabs {
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+  font-weight: 200;
+}
+
+.tab {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(28, 28, 28);
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.tab:hover {
+  transform: scale(1.1);
+}
+
+#skillsTab {
+  background-color: rgb(234, 61, 79);
+}
+
+.tab-content {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+#spacer {
+  width: 25px;
+}
 
 
+#experienceContent {
+  display: none;
+}
 
+#educationContent {
+  display: none;
+}
 
+.projectCardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+  margin-top: 100px;
+}
 
+.viewMoreButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
+.viewMoreButton {
+  background-color: rgb(28, 28, 28);
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 80px;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
 
+.viewMoreButton i {
+  font-size: 35px;
+}
+
+.viewMoreButton:hover {
+  background-color: rgb(234, 61, 79);
+  color: white;
+  transform: scale(1.1);
+}
+
+.additionalContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+}
+
+.additionalCard {
+  width: 25%;
+  height: 370px;
+  background-color: rgb(35, 35, 35);
+  gap: 20px;
+
+  border-radius: 6px;
+  transition: 0.3s;
+  color: white;
+  position: relative;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.additionalCard img {
+  position: absolute;
+  font-size: xx-large;
+  color: white;
+  width: 30px;
+}
+.cardButtons {
+  /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+  width: 20%;
+  font-size: small;
+  position: absolute;
+}
+
+.projectButtonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.enterButton {
+  background-color: rgb(234, 61, 79);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  bottom: 40px;
+  transition: 0.3s;
+  width: 10%;
+  font-size: small;
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  left: 100px;
+}
+
+.enterButton img {
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+}
+
+.codeButton {
+  background-color: rgb(234, 61, 79);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  bottom: 40px;
+  transition: 0.3s;
+  width: 10%;
+  font-size: small;
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.codeButton img {
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+}
+
+.codeButton:hover {
+  transform: scale(1.1);
+}
+
+.codeButton img:hover {
+  transform: scale(1.1);
+}
+
+.enterButton:hover {
+  transform: scale(1.1);
+}
+
+.enterButton img:hover {
+  transform: scale(1.1);
+}
+.projectTitle {
+  font-size: 25px;
+  font-weight: 700;
+  position: absolute;
+  top: 90px;
+}
+
+.projectText {
+  position: absolute;
+  top: 140px;
+  text-align: left;
+  padding-right: 40px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.additionalCard:hover {
+  transform: scale(1.05);
+  background-color: rgb(234, 61, 79);
+}
+
+.additionalCard:hover .codeButton {
+  transform: scale(1.05);
+  background-color: rgb(35, 35, 35);
+}
+
+.additionalCard:hover .enterButton {
+  transform: scale(1.05);
+  background-color: rgb(35, 35, 35);
+}
+
+.contactMeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  margin-bottom: 100px;
+}
+
+.contactMeTitle {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.contacts {
+  color: white;
+  align-items: left;
+  text-align: left;
+}
+
+.socials {
+  color: white;
+  font-size: large;
+  font-weight: 200;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.socials button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+
+  margin-right: 4px;
+  transition: 0.3s;
+}
+
+.socials button:hover {
+  color: rgb(234, 61, 79);
+  transform: scale(1.2);
+}
+
+.emailNumber {
+  color: white;
+  font-size: large;
+  font-weight: 200;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#emailIcon {
+  color: rgb(234, 61, 79);
+}
+
+.viewResumeButton {
+  background-color: rgb(28, 28, 28);
+  border-color: rgb(234, 61, 79);
+  border-radius: 5px;
+  border-width: 1px;
+  color: white;
+  border-style: solid;
+  padding: 5px;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: small;
+  text-decoration: none;
+}
+
+.viewResumeButton a{
+  color: white;
+  font-weight: 200;
+  font-size: small;
+  text-decoration: none;
+}
+
+.viewResumeButton:hover {
+  background-color: rgb(234, 61, 79);
+  color: white;
+  transform: scale(1.1);
+}
+
+#emailCapture {
+  margin-top: 90px;
+  height: 340px;
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#yourName {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(27, 27, 27);
+  padding: 5px;
+  color: white;
+  font-weight: 200;
+}
+
+#yourEmail {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(27, 27, 27);
+  padding: 5px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+#yourMessage {
+  width: 100%;
+  height: 210px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(27, 27, 27);
+  padding: 5px;
+  color: white;
+  margin-top: 10px;
+  font-weight: 200;
+  text-align: left;
+  vertical-align: top;
+}
+
+#sendButton {
+  background-color: rgb(28, 28, 28);
+  border-color: rgb(234, 61, 79);
+  border-radius: 5px;
+  border-width: 1px;
+  color: white;
+  border-style: solid;
+  padding: 5px;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 200;
+  width: 50px;
+  font-size: small;
+}
+
+#sendButton:hover {
+  background-color: rgb(234, 61, 79);
+  color: white;
+  transform: scale(1.1);
+}
