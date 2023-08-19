@@ -283,7 +283,8 @@ nav {
   color: white;
   bottom: 40px;
   transition: 0.3s;
-  width: 10%;
+  width: 35px;
+  height: 35px;
   font-size: small;
   position: absolute;
   padding: 5px;
@@ -292,13 +293,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
-  left: 100px;
+  left: 90px;
 }
 
 .enterButton img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   transition: 0.3s;
 }
 
@@ -309,7 +309,8 @@ nav {
   color: white;
   bottom: 40px;
   transition: 0.3s;
-  width: 10%;
+  width: 35px;
+  height: 35px;
   font-size: small;
   position: absolute;
   padding: 5px;
@@ -318,12 +319,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
 }
 
 .codeButton img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   transition: 0.3s;
 }
 
