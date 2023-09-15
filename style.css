@@ -32,7 +32,15 @@ body {
   /* background-image: url(background2.svg);
   background-size: cover;
   background-repeat: no-repeat; */
-  min-height: 750px;
+  min-height: 900px;
+}
+
+#landingIMG {
+  width: 80%;
+
+  object-fit: cover;
+
+  z-index: -1;
 }
 
 header {
@@ -60,7 +68,7 @@ nav {
 }
 
 .nav-list li:hover {
-  color: rgb(234, 61, 79);
+  color: #00c8ff;
 }
 
 .nav-list li:first-child {
@@ -74,7 +82,7 @@ nav {
 }
 
 .nav-list li a:hover {
-  color: rgb(234, 61, 79);
+  color: #00c8ff;
 }
 
 .landing {
@@ -103,7 +111,7 @@ nav {
 }
 
 .colored-word {
-  color: rgb(234, 61, 79); /* Or any color you prefer */
+  color: #00c8ff; /* Or any color you prefer */
 }
 
 /* Typing animation for title */
@@ -122,10 +130,6 @@ nav {
   margin-bottom: 150px;
 }
 
-.aboutMePic {
-  margin-top: 100px;
-  margin-left: 40px;
-}
 .aboutMeText {
   color: white;
   margin-right: 40px;
@@ -176,7 +180,8 @@ nav {
 }
 
 #skillsTab {
-  background-color: rgb(234, 61, 79);
+  background: #00c8ff;
+  color: black;
 }
 
 .tab-content {
@@ -213,12 +218,12 @@ nav {
 }
 
 .viewMoreButton {
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(35, 35, 35);
   border: none;
   border-radius: 5px;
   width: 80px;
   height: 80px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px;
   transition: 0.3s;
   text-align: center;
@@ -229,9 +234,8 @@ nav {
 }
 
 .viewMoreButton:hover {
-  background-color: rgb(234, 61, 79);
-  color: white;
   transform: scale(1.1);
+  background-color: #00c8ff;
 }
 
 .additionalContainer {
@@ -246,7 +250,7 @@ nav {
   height: 370px;
   background-color: rgb(35, 35, 35);
   gap: 20px;
-
+  border: 2px solid rgb(35, 35, 35);
   border-radius: 6px;
   transition: 0.3s;
   color: white;
@@ -277,10 +281,10 @@ nav {
 }
 
 .enterButton {
-  background-color: rgb(234, 61, 79);
+  background-color: rgb(0, 200, 255);
   border-radius: 5px;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   bottom: 40px;
   transition: 0.3s;
   width: 35px;
@@ -303,10 +307,10 @@ nav {
 }
 
 .codeButton {
-  background-color: rgb(234, 61, 79);
+  background-color: rgb(0, 200, 255);
   border-radius: 5px;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   bottom: 40px;
   transition: 0.3s;
   width: 35px;
@@ -360,17 +364,15 @@ nav {
 
 .additionalCard:hover {
   transform: scale(1.05);
-  background-color: rgb(234, 61, 79);
+  border-color: rgb(0, 200, 255);
 }
 
 .additionalCard:hover .codeButton {
   transform: scale(1.05);
-  background-color: rgb(35, 35, 35);
 }
 
 .additionalCard:hover .enterButton {
   transform: scale(1.05);
-  background-color: rgb(35, 35, 35);
 }
 
 .contactMeContainer {
@@ -412,7 +414,7 @@ nav {
 }
 
 .socials button:hover {
-  color: rgb(234, 61, 79);
+  color: #00c8ff;
   transform: scale(1.2);
 }
 
@@ -425,12 +427,12 @@ nav {
 }
 
 #emailIcon {
-  color: rgb(234, 61, 79);
+  color: #00c8ff;
 }
 
 .viewResumeButton {
-  background-color: rgb(28, 28, 28);
-  border-color: rgb(234, 61, 79);
+  background-color: #00c8ff;
+
   border-radius: 5px;
   border-width: 1px;
   color: white;
@@ -439,21 +441,19 @@ nav {
   transition: 0.3s;
   text-align: center;
   margin-top: 10px;
-  font-weight: 200;
+  font-weight: 400;
   font-size: small;
   text-decoration: none;
 }
 
 .viewResumeButton a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 200;
   font-size: small;
   text-decoration: none;
 }
 
 .viewResumeButton:hover {
-  background-color: rgb(234, 61, 79);
-  color: white;
   transform: scale(1.1);
 }
 
@@ -505,7 +505,7 @@ nav {
 
 #sendButton {
   background-color: rgb(28, 28, 28);
-  border-color: rgb(234, 61, 79);
+  border-color: #00c8ff;
   border-radius: 5px;
   border-width: 1px;
   color: white;
@@ -520,16 +520,11 @@ nav {
 }
 
 #sendButton:hover {
-  background-color: rgb(234, 61, 79);
-  color: white;
+  background-color: #00c8ff;
+  color: rgb(0, 0, 0);
   transform: scale(1.1);
 }
 
-/* Style for the Typed.js cursor */
-.typed-cursor {
-  display: none;
-}
-
-#Hspacer{
+#Hspacer {
   height: 10px;
 }

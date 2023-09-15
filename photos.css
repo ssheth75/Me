@@ -107,6 +107,6 @@ body.menu-toggled > .meta-link > span {
 }
 
 .home:hover {
-  background-color: rgb(234, 61, 79);
+  background-color: #00c8ff;
   transform: scale(1.1);
 }

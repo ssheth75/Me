@@ -1,13 +1,13 @@
 console.log("Hello, world!");
 
 document.addEventListener("DOMContentLoaded", () => {
-  const numPics = 10;
+  const numPics = 12;
 
   const segments = [];
   for (let i = 0; i < numPics; i++) {
     segments.push(document.getElementById(`segment${i + 1}`));
   }
-  segments[0].style.backgroundColor = "rgb(234, 61, 79)";
+  segments[0].style.backgroundColor = "#00c8ff";
 
   const track = document.getElementById("image-track");
   const images = track.getElementsByClassName("image");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < numPics; i++) {
       if (i === currentIndex) {
-        segments[i].style.backgroundColor = "rgb(234, 61, 79)";
+        segments[i].style.backgroundColor = "#00c8ff";
       } else {
         segments[i].style.backgroundColor = "rgb(45, 45, 45)";
       }
