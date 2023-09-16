@@ -85,7 +85,7 @@ body.menu-toggled > .meta-link > span {
   gap: 10px;
   margin-left: 57px;
   margin-right: 57px;
-  margin-top: 760px;
+  margin-top: 900px;
 }
 
 #segment-indicator div {
@@ -110,3 +110,14 @@ body.menu-toggled > .meta-link > span {
   background-color: #00c8ff;
   transform: scale(1.1);
 }
+
+/* #clickAndDrag{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-weight: 100;
+  margin-top: 60px;
+  height: 10px;
+  transition: .3s;
+} */
