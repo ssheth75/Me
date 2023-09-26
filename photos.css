@@ -6,6 +6,8 @@ body {
   background-attachment: fixed;
   margin: 0rem;
   overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Your existing CSS code */
