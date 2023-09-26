@@ -37,10 +37,10 @@ body {
 
 #landingIMG {
   width: 80%;
-
   object-fit: cover;
-
   z-index: -1;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 header {
@@ -123,9 +123,11 @@ nav {
   background-repeat: no-repeat; */
 }
 
-#headshot{
+#headshot {
   width: 400px;
   margin-top: 50px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .aboutMe {
