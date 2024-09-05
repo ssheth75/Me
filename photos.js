@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < numPics; i++) {
       if (i === currentIndex) {
-        segments[i].style.backgroundColor = "#00c8ff";
+        segments[i].style.backgroundColor = "#00c8ff"; // primary color 
       } else {
         segments[i].style.backgroundColor = "rgb(45, 45, 45)";
       }

@@ -15,7 +15,7 @@ function updateBorder(section) {
   for (var i = 0; i < tabs.length; i++) {
     if (tabs[i] === section) {
       document.getElementById(tabs[i]).style.background =
-        "#00c8ff";
+        "rgb(249, 255, 127)";
       document.getElementById(tabs[i]).style.color = "black";
     } else {
       document.getElementById(tabs[i]).style.background = "rgb(35, 35, 35)";
@@ -44,3 +44,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const fadeContent = document.getElementById("content");
   fadeContent.classList.add("fade-in");
 });
+
+
+window.addEventListener('scroll', function() {
+  const landingContainer = document.querySelector('.landingContainer');
+  const aboutMeContainer = document.getElementById('fadeInContainer');
+  const landingHeight = landingContainer.offsetHeight;
+
+  const fadeInThreshold = landingHeight * 0.2; 
+  
+  // Only trigger the fade-in if the container is not already visible
+  if (window.scrollY > fadeInThreshold && !aboutMeContainer.classList.contains('visible')) {
+    aboutMeContainer.classList.add('visible');
+  }
+});
+

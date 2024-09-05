@@ -35,159 +35,189 @@
   <div id="content">
     <div class="landingContainer">
       <header>
-        <nav>
+
+        <div class="spacer"></div>
+        <div class="headerName">SHIRVIL SHETH</div>
+
+        <div class="spacer"></div>
+
+        <nav class="nav1">
           <ul class="nav-list">
             <li onclick="scrollToSection(710);">About Me</li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="photos.html">Photography</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav2">
+          <ul class="nav-list">
             <li onclick="scrollToSection(10000);">Contact</li>
-            <li><a href="resume.pdf">Resume</a></li>
+            <li id="resumeNavButton"><a href="resume.pdf" style="color: black;">Resume</a></li>
           </ul>
         </nav>
       </header>
 
+      <!-- <div class="ticker-wrap">
+        <div class="ticker">
+          <div class="ticker-item">UNIVERSITY OF MICHIGAN |&nbsp;&nbsp;</div>
+          <div class="ticker-item">COMPUTER SCIENCE |&nbsp;&nbsp;</div>
+          <div class="ticker-item">ROSS SCHOOL OF BUSINESS | &nbsp;&nbsp;</div>
+          <div class="ticker-item">SOFTWARE ENGINEER | &nbsp;&nbsp;</div>
+          <div class="ticker-item">INTEL CORPORATION | &nbsp;&nbsp;</div>
+          <div class="ticker-item">INTEL CORPORATION | &nbsp;&nbsp;</div>
+          <div class="ticker-item">INTEL CORPORATION | &nbsp;&nbsp;</div>
+          <div class="ticker-item">INTEL CORPORATION | &nbsp;&nbsp;</div>
+          <div class="ticker-item">INTEL CORPORATION | &nbsp;&nbsp;</div>
+        </div>
+      </div> -->
+
       <div class="landing">
-        <img id="landingIMG" src="LANDING.png" draggable="false">
+        <div class="typing-container">
+          <span id="typing-text"></span>
+        </div>
+        <script src="typing.js"></script>
       </div>
 
 
     </div>
 
-    <div id="aboutMeContainer">
-      <div class="aboutMe">
+    <div id="fadeInContainer">
 
 
-        <img id="headshot" src="headshot.png" draggable="false">
+
+      <div id="aboutMeContainer">
+        <div class="aboutMe">
 
 
-        <div class="aboutMeText">
-          <div class="aboutMeTitle">About Me</div>
-          <div class="aboutMeDescription">My name is Shirvil Sheth, a junior at the University of Michigan majoring in
-            Computer Science and minoring at the Ross School of Business.
-            My world revolves around the fascinating blend of technology, business, and social impact. With an
-            unwavering
-            belief in the power of tech to
-            drive positive change, I'm on a mission to create solutions that make a difference. When I'm not around the
-            computer, you'll likely find me
-            on the basketball court or exploring the world through the lens of my camera. This website is my canvas, a
-            place where I paint the strokes of my interests, experiences,
-            and aspirations. From personal projects to snapshots of life
-            through the lens, I'll be sharing it all. I'm excited to connect with fellow learners, tech enthusiasts,
-            and anyone who believes in the power of combining passions. Don't hesitate to reach out—I'd love to hear
-            your
-            thoughts, share stories, and collaborate on ideas.</div>
-          <div id="Hspacer"></div>
+          <img id="headshot" src="headshotYellow.png" draggable="false">
 
-          <div class="tab-container">
-            <div class="tabs">
-              <div class="tab" id="skillsTab" onclick="showContent('skillsContent'); updateBorder('skillsTab')">Skills
+
+          <div class="aboutMeText">
+            <div class="aboutMeTitle">About Me</div>
+            <div class="aboutMeDescription">I am a senior at the University of Michigan majoring in
+              Computer Science with a minor in business administration and management.
+              My world revolves around the fascinating blend of technology, business, and social impact. With an
+              unwavering
+              belief in the power of tech to
+              drive positive change, I'm on a mission to create solutions that make a difference. This website is my
+              canvas, a
+              place where I paint the strokes of my interests, experiences,
+              and aspirations. From personal projects to snapshots of life
+              through the lens, I'll be sharing it all. I'm excited to connect with fellow learners, tech enthusiasts,
+              and anyone who believes in the power of combining passions. Don't hesitate to reach out!</div>
+            <div id="Hspacer"></div>
+
+            <div class="tab-container">
+              <div class="tabs">
+                <div class="tab" id="skillsTab" onclick="showContent('skillsContent'); updateBorder('skillsTab')">Skills
+                </div>
+                <div id="spacer"></div>
+                <div class="tab" id="experienceTab"
+                  onclick="showContent('experienceContent'); updateBorder('experienceTab')">
+                  Experience</div>
+                <div id="spacer"></div>
+                <div class="tab" id="educationTab"
+                  onclick="showContent('educationContent'); updateBorder('educationTab')">
+                  Education</div>
               </div>
-              <div id="spacer"></div>
-              <div class="tab" id="experienceTab"
-                onclick="showContent('experienceContent'); updateBorder('experienceTab')">
-                Experience</div>
-              <div id="spacer"></div>
-              <div class="tab" id="educationTab"
-                onclick="showContent('educationContent'); updateBorder('educationTab')">
-                Education</div>
+              <!-- Content for each tab will be displayed here -->
             </div>
-            <!-- Content for each tab will be displayed here -->
-          </div>
-          <div class="tab-content">
+            <div class="tab-content">
 
-            <div id="skillsContent">
-              <div id="skill"><span class="colored-word">Languages</span> </div>
-              C++ | C | Python | JavaScript |
-              TypeScript | React | HTML | CSS | SQL
-              <div id="Hspacer"></div>
-              <div id="skill"><span class="colored-word">Other Skills</span> </div>
-              Adobe Photoshop | Adobe Illustrator |
-              Adobe Lightroom | Figma | Microsoft Office | Power BI
-            </div>
+              <div id="skillsContent">
+                <div id="skill"><span class="colored-word">Languages</span> </div>
+                C++ | C | C# | Python | JavaScript | React | HTML | CSS | SQL
+                <div id="Hspacer"></div>
+                <div id="skill"><span class="colored-word">Tools</span> </div>
+                AWS | TensorFlow | Git | Visual Studio | PowerShell | Adobe Suite | Microsoft Office
+              </div>
 
-            <div id="experienceContent">
-              <div id="experience"><span class="colored-word">Internships</span> </div>
-              Software Engineering Intern @ Rocket Mortgage | Summer 2023
-              <br>
-              Software Engineering Intern @ Norma Group | Summer 2022
-            </div>
+              <div id="experienceContent">
+                <div id="experience"><span class="colored-word">Internships</span> </div>
+                Software Engineering Intern @ Intel Corporation | Summer 2024
+                <br>
+                Software Engineering Intern @ Rocket Mortgage | Summer 2023
+                <br>
+                Software Engineering Intern @ Norma Group | Summer 2022
+              </div>
 
 
-            <div id="educationContent">
-              <div id="education"><span class="colored-word">University of Michigan</span> </div>
-              Major | Computer Science
-              <br>
-              Minor | Ross School of Business
-              <div id="Hspacer"></div>
-              <div id="education"><span class="colored-word">Highschool</span> </div>
-              Rochester High School | MI
+              <div id="educationContent">
+                <div id="education"><span class="colored-word">University of Michigan - Ann Arbor</span> </div>
+                Bachelor of Science in Computer Science
+                <br>
+                Minor @ The Ross School of Business
+                <div id="Hspacer"></div>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="additionalContainer">
-      <div class="additionalCard" onclick="window.location.href='projects.html'">
-        <img src="svg/brackets.svg">
-        <div class="projectTitle">
-          Projects
+      <div class="additionalContainer">
+        <div class="projectAndPhotosCard" onclick="window.location.href='projects.html'">
+          <img src="svg/brackets.svg">
+          <div class="projectsAndPhotosTitle">
+            Projects
+          </div>
+          <div class="projectsAndPhotosText">
+            Take a look at some of the things I've built in the past and what I'm currently working on!
+            From some basic games to more challenging web apps,
+            I try to build things that are both engaging and useful.
+          </div>
         </div>
-        <div class="projectText">
-          Take a look at some of the things I've built in the past and what I'm currently working on!
-          From some basic games to more challenging web apps,
-          I try to build things that are both engaging and useful.
+
+        <div class="projectAndPhotosCard" onclick="window.location.href='photos.html'">
+          <img src="svg/camera.svg">
+          <div class="projectsAndPhotosTitle">
+            Photography
+          </div>
+          <div class="projectsAndPhotosText">
+            Welcome to my world of captured moments, where film is my main canvas.
+            Take a moment to explore life's beauty through my lens.
+            Each photo tells a unique story, an invitation to witness the world as I see it.
+          </div>
         </div>
       </div>
 
-      <div class="additionalCard" onclick="window.location.href='photos.html'">
-        <img src="svg/camera.svg">
-        <div class="projectTitle">
-          Photography
+      <div class="contactMeContainer">
+        <div class="contacts">
+          <div class="contactMeTitle">
+            Contact Me
+          </div>
+          <div class="emailNumber" onclick="openEmailClient()">
+            <i id="emailIcon" class="fa fa-regular fa-paper-plane"></i> shirvil@umich.edu
+          </div>
+
+          <div class="emailNumber">
+            <i id="emailIcon" class="fa fa-solid fa-phone"></i> +1 2488537196
+          </div>
+
+          <div class="socials">
+            <button onclick="window.location.href='https:www.linkedin.com/in/shirvilsheth'"><i
+                class="fa fa-brands fa-linkedin"></i></button>
+            <button onclick="window.location.href='https://github.com/ssheth75/'"><i
+                class="fa fa-brands fa-github"></i></button>
+            <button onclick="window.location.href='https://www.instagram.com/shirvil_sheth/'"><i
+                class="fa fa-brands fa-instagram"></i></button>
+
+          </div>
+          <button class="viewResumeButton"> <a href="resume.pdf">Resume</a></button>
+
         </div>
-        <div class="projectText">
-          Welcome to my world of captured moments, where film is my main canvas.
-          Take a moment to explore life's beauty through my lens.
-          Each photo tells a unique story, an invitation to witness the world as I see it.
-        </div>
+
+        <form id="emailCapture" action="https://formspree.io/f/xoqoeggp" method="POST">
+
+          <input id="yourName" name="name" type="text" placeholder="Name" required>
+          <input id="yourEmail" name="email" type="email" placeholder="Email" required>
+
+          <textarea id="yourMessage" name="message" placeholder="Your Message" required></textarea>
+          <input id="sendButton" type="submit" value="Send">
+
+        </form>
+
       </div>
-    </div>
-
-    <div class="contactMeContainer">
-      <div class="contacts">
-        <div class="contactMeTitle">
-          Contact Me
-        </div>
-        <div class="emailNumber" onclick="openEmailClient()">
-          <i id="emailIcon" class="fa fa-regular fa-paper-plane"></i> shirvil@umich.edu
-        </div>
-
-        <div class="emailNumber">
-          <i id="emailIcon" class="fa fa-solid fa-phone"></i> +1 2488537196
-        </div>
-
-        <div class="socials">
-          <button onclick="window.location.href='https:www.linkedin.com/in/shirvilsheth'"><i
-              class="fa fa-brands fa-linkedin"></i></button>
-          <button onclick="window.location.href='https://github.com/ssheth75/'"><i
-              class="fa fa-brands fa-github"></i></button>
-          <button onclick="window.location.href='https://www.instagram.com/shirvil_sheth/'"><i
-              class="fa fa-brands fa-instagram"></i></button>
-
-        </div>
-        <button class="viewResumeButton"> <a href="resume.pdf">Resume</a></button>
-
-      </div>
-
-      <form id="emailCapture" action="https://formspree.io/f/xoqoeggp" method="POST">
-
-        <input id="yourName" name="name" type="text" placeholder="Name" required>
-        <input id="yourEmail" name="email" type="email" placeholder="Email" required>
-
-        <textarea id="yourMessage" name="message" placeholder="Your Message" required></textarea>
-        <input id="sendButton" type="submit" value="Send">
-
-      </form>
 
     </div>
 
@@ -195,6 +225,61 @@
   </div>
 
   <script src="styling.js"></script>
+
+  <script>
+    // Preload all images for photos.html
+    const imageSources = [
+      "photos/solar_eclipse.jpg",
+      "photos/sfo2.jpg",
+      "photos/chicago.jpg",
+      "photos/tomatoes.jpg",
+      "photos/alps.jpg",
+      "photos/darkMonkey.jpg",
+      "photos/yosemite.jpg",
+      "photos/road.jpg",
+      "photos/parrot.jpg",
+      "photos/winston.JPG",
+      "photos/greece.jpg",
+      "photos/lawquad.jpg",
+      "photos/alps-2.jpg",
+      "photos/bagdad.jpg",
+      "photos/barca1.jpg",
+      "photos/barca2.jpg",
+      "photos/barca3.jpg",
+      "photos/cascadesbw.jpg",
+      "photos/cascadesRoad.jpg",
+      "photos/diablo.jpg",
+      "photos/sf3.jpg",
+      "photos/grandCanyon.jpg",
+      "photos/greece2.jpg",
+      "photos/hawaii.jpg",
+      "photos/japaneseGarden.jpg",
+      "photos/kayak.jpg",
+      "photos/lasagrad.jpg",
+      "photos/madrid1.jpg",
+      "photos/madrid2.jpg",
+      "photos/madrid4.jpg",
+      "photos/madrid6.jpg",
+      "photos/madrid7.jpg",
+      "photos/nyc.jpg",
+      "photos/nycBday.jpg",
+      "photos/otters.jpg",
+      "photos/portland.jpg",
+      "photos/rainier.jpg",
+      "photos/scoot.jpg",
+      "photos/sfHill.jpg",
+      "photos/stars.jpg",
+      "photos/stateTheater.jpg",
+      "photos/stormKing.jpg",
+      "photos/waterfall.jpg"
+    ];
+
+    imageSources.forEach(src => {
+      const img = new Image();
+      img.src = src; // This will preload the image into the cache
+    });
+  </script>
+
 
 </body>
 
