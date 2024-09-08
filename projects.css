@@ -1,5 +1,5 @@
-.projectsHeader{
-  display:flex;
+.projectsHeader {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +19,10 @@
   margin-top: 30px;
 }
 
+footer {
+  height: 5rem;
+  text-align: center;
+}
 /* Ensure the card container is positioned relative to handle the buttons properly */
 
 /* Individual card styling */
@@ -56,7 +60,6 @@
   transform: scale(1.05);
 }
 
-
 /* Responsive layout for smaller screens */
 /* Responsive layout for smaller screens */
 /* Responsive layout for smaller screens */
@@ -82,7 +85,8 @@
     width: 90%;
   }
 
-  .codeButton, .enterButton {
+  .codeButton,
+  .enterButton {
     width: 40px;
     height: 40px;
   }
@@ -96,11 +100,10 @@
   }
 }
 
-
 .projectTitle {
   font-size: 2rem; /* Responsive font size */
   font-weight: 700;
-  font-family: 'Handjet', sans-serif;
+  font-family: "Handjet", sans-serif;
   margin: 10px 0; /* Add space around the title */
 }
 
@@ -129,7 +132,8 @@
   align-items: center;
 }
 
-.codeButton, .enterButton {
+.codeButton,
+.enterButton {
   background-color: var(--primary-color);
   border-radius: 5px;
   border: none;
@@ -153,16 +157,19 @@
   right: 20px;
 }
 
-.codeButton img, .enterButton img {
+.codeButton img,
+.enterButton img {
   width: 90%; /* Slightly smaller image size inside the buttons */
   height: 90%;
   margin: 0px;
 }
 
-.codeButton:hover, .enterButton:hover {
+.codeButton:hover,
+.enterButton:hover {
   transform: scale(1.1);
 }
 
-.codeButton img:hover, .enterButton img:hover {
+.codeButton img:hover,
+.enterButton img:hover {
   transform: scale(1.1);
 }
